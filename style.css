@@ -7,6 +7,9 @@
     font-family: "Electrolize", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body {
     height: 100dvh;
     width: 100dvw;
