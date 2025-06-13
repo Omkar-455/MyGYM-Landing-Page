@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Electrolize&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Electrolize", sans-serif;
+}
+
+body {
+    height: 100dvh;
+    width: 100dvw;
+    background-color: #1D1D1D;
+    color: white;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/gym-main.jpg);
+    background-position: center 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.471);
+    position: relative;
+    z-index: 2;
+}
+
+.nav {
+    max-width: 80vw;
+    margin: auto;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: "Quantico", sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 22px;
+    background-color: #7CFC00;
+    color: #1D1D1D;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    border: none;
+    font-weight: 800;
+}
+
+.btn:hover {
+    background-color: #32CD32;
+    color: #ffff;
+}
+
+.hero-section {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.hero-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 40px;
+}
+
+.hero-text .heading {
+    font-size: 6.3vw;
+    font-family: "Quantico", sans-serif;
+    line-height: 1.2;
+}
+
+.gym-name {
+    font-weight: 900;
+}
+
+strong {
+    color: #7CFC00;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+    padding: 0 10px 15px 10px;
+
+}
+
+.hero-btn {
+    margin-left: 8px;
+    font-size: 1.4rem;
+}
+
+.main {
+    min-height: calc(100vh - 90px);
+    max-width: 80vw;
+    margin: auto;
+}
+
+.about-section {
+    width: 100%;
+    min-height: 40vh;
+    background-color: #1D1D1D;
+    color: #FFFFFF;
+    padding: 60px 0 20px 5px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.about-content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #CCCCCC;
+}
+
+.about-content .highlight {
+    font-weight: bold;
+    color: #00ffffb9;
+}
+
+.img-conte {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 500px;
+    max-height: 450px;
+    min-height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.why-choose-section {
+    width: 100%;
+    padding: 30px 0px 10px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.why-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.why-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.why-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.why-card {
+    background-color: #1D1D1D;
+    border: 1px solid #2C2C2C;
+    border-radius: 15px;
+    padding: 30px 20px;
+    max-width: 360px;
+    box-shadow: 0 0 10px rgba(124, 252, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(124, 252, 0, 0.3);
+}
+
+.icon {
+    font-size: 2.5rem;
+    color: #7CFC00;
+    margin-bottom: 20px;
+}
+
+.why-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #00FFFF;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+.plans-section {
+    width: 100%;
+    padding: 60px 0px 20px 0;
+    background-color: #1D1D1D;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #7CFC00;
+    text-align: left;
+}
+
+.plans-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.plan-card {
+    background-color: #2C2C2C;
+    border-radius: 15px;
+    padding: 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 230px;
+    text-align: center;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.plan-card h3 {
+    color: #00FFFF;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.plan-card .price {
+    font-size: 1.8rem;
+    color: #7CFC00;
+    margin-bottom: 12px;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.plan-card ul li {
+    margin: 10px 0;
+}
+
+.featured {
+    border: 2px solid #00FFFF;
+}
+
+.form-section {
+    background-color: #1D1D1D;
+    padding: 80px 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 2.5rem;
+    color: #7CFC00;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 65%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2C2C2C;
+    color: #fff;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1px solid #7CFC00;
+}
+
+.site-footer {
+    background-color: #1D1D1D;
+    padding: 30px 20px;
+    color: #aaa;
+    text-align: center;
+}
+
+.site-footer .footer-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+
+@media (max-width:700px) {
+    .main {
+        max-width: 88vw;
+    }
+
+    .hero::before {
+        content: "";
+        width: 100vw;
+        height: 100vh;
+        backdrop-filter: blur(1.3px);
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+
+    .nav {
+        max-width: 88vw;
+    }
+
+    .hero-section {
+        max-width: 88vw;
+        text-align: center;
+    }
+
+    .hero-text {
+        width: 100%;
+        margin-top: 14vh;
+        align-items: center;
+    }
+
+    .hero-section .heading {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.19rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-img {
+        display: none;
+    }
+
+    .why-choose-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-title {
+        text-align: center;
+    }
+
+    .why-subtitle {
+        text-align: center;
+    }
+
+    .why-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .plans-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        width: 100%;
+    }
+}
+
+@media (min-width:701px) and (max-width: 895px) {
+
+    .nav {
+        max-width: 88vw;
+    }
+
+    .hero-section {
+        max-width: 88vw;
+    }
+
+    .hero-section .heading {
+        font-size: 8.3vw;
+    }
+
+    .hero p {
+        padding: 0 10px 15px 8px;
+    }
+
+    .hero-text {
+        width: 65%;
+        margin-top: 50px;
+    }
+
+    .main {
+        max-width: 88vw;
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 60px 60px 25px 60px;
+    }
+
+    .about-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-conte {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .why-title {
+        text-align: center;
+    }
+
+    .why-subtitle {
+        text-align: center;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .plans-container {
+        grid-template-columns: 1fr;
+    }
+
+}
