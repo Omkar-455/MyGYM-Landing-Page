@@ -7,9 +7,10 @@
     font-family: "Electrolize", sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 body {
     height: 100dvh;
     width: 100dvw;
@@ -21,7 +22,7 @@ body {
 
 .hero {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     background-image: url(./images/gym-main.jpg);
     background-position: center 25%;
     background-size: cover;
@@ -350,19 +351,8 @@ strong {
 
 
 @media (max-width:700px) {
-    .main {
-        max-width: 88vw;
-    }
-
-    .hero::before {
-        content: "";
-        width: 100vw;
-        height: 100vh;
-        backdrop-filter: blur(1.3px);
-        display: block;
-        position: absolute;
-        top: 0;
-        z-index: -1;
+    .hero{
+        height: 90dvh;
     }
 
     .nav {
@@ -376,7 +366,7 @@ strong {
 
     .hero-text {
         width: 100%;
-        margin-top: 14vh;
+        margin-top: 12vh;
         align-items: center;
     }
 
@@ -387,6 +377,11 @@ strong {
     .hero p {
         font-size: 1.19rem;
     }
+
+    .main {
+        max-width: 88vw;
+    }
+
 
     .about-section {
         flex-direction: column;
@@ -498,7 +493,7 @@ strong {
     .plans-section {
         /* width: 90%;
         align-items: center; */
-           padding: 60px 60px 20px 60px;
+        padding: 60px 60px 20px 60px;
     }
 
     .section-title {
