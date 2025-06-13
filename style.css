@@ -351,9 +351,6 @@ strong {
 
 
 @media (max-width:700px) {
-    .hero{
-        height: 90dvh;
-    }
 
     .nav {
         max-width: 88vw;
@@ -491,8 +488,6 @@ strong {
     }
 
     .plans-section {
-        /* width: 90%;
-        align-items: center; */
         padding: 60px 60px 20px 60px;
     }
 
